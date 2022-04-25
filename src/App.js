@@ -33,7 +33,12 @@ function App() {
 
   return (
     <div className="App">
-            {msg? <h1>{msg.message}</h1>: <Sipner/>}
+            {msg? <div>
+              <h2>{msg.info}</h2>
+              <h1>{msg.name}</h1>
+              <h2>{msg.message}</h2>
+
+            </div>: <Sipner/>}
             
     </div>
   );
